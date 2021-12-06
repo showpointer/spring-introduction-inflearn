@@ -9,13 +9,10 @@ import study.inflearn.springintroduction.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    // 생성자가 1개만 있으면 @Autowired는 생략 가능하다.
-    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
